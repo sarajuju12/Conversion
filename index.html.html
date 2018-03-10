@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conversion Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <table width=100% cellspacing=0 cellpadding=0 border=0>
+            <tr height=200px>
+                <th>
+                    <img src="https://iconverticons.com/img/logo.png" alt="Conversion PNG">
+                </th>
+                <th id="title">Conversion Calculator</td>
+                <th>
+                    <img src="https://iconverticons.com/img/logo.png" alt="Conversion PNG">
+                </th>
+            </tr>
+        </table> </br>
+        <table width=100% cellspacing=0 cellpadding=0 border=0>
+            <tr height=100px>
+                <th id="lengthcolumn" class="header" colspan=3>Length</th> 
+                <th id="masscolumn" class="header" colspan=3>Mass</th>
+                <th id="volumecolumn" class="header" colspan=3>Volume</th>
+            </tr>
+            <tr height=50px>
+                <td>
+                    <select id="selectlength1">
+                        <option value="millimetre">millimetre</option>
+                        <option value="centimetre">centimetre</option>
+                        <option value="metre">metre</option>
+                        <option value="kilometre">kilometre</option>
+                        <option value="inch">inch</option>
+                        <option value="foot">foot</option>
+                        <option value="yard">yard</option>
+                        <option value="mile">mile</option>
+                    </select>
+                </td>
+                <td rowspan="2" class="button">
+                <button id="lengthbutton">Convert!</button>
+                </td>
+                <td>
+                    <select id="selectlength2">
+                        <option value="millimetre">millimetre</option>
+                        <option value="centimetre">centimetre</option>
+                        <option value="metre">metre</option>
+                        <option value="kilometre">kilometre</option>
+                        <option value="inch">inch</option>
+                        <option value="foot">foot</option>
+                        <option value="yard">yard</option>
+                        <option value="mile">mile</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="selectmass1">
+                        <option value="milligram">milligram</option>
+                        <option value="gram">gram</option>
+                        <option value="kilogram">kilogram</option>
+                        <option value="tonne">tonne</option>
+                        <option value="ounce">ounce</option>
+                        <option value="pound">pound</option>
+                        <option value="US ton">US ton</option>
+                    </select>
+                </td>
+                <td rowspan="2" class="button">
+                <button id="massbutton">Convert!</button>
+                </td>
+                <td>
+                    <select id="selectmass2">
+                        <option value="milligram">milligram</option>
+                        <option value="gram">gram</option>
+                        <option value="kilogram">kilogram</option>
+                        <option value="tonne">tonne</option>
+                        <option value="ounce">ounce</option>
+                        <option value="pound">pound</option>
+                        <option value="US ton">US ton</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="selectvolume1">
+                        <option value="millilitre">millilitre</option>
+                        <option value="litre">litre</option>
+                        <option value="teaspoon">teaspoon</option>
+                        <option value="tablespoon">tablespoon</option>
+                        <option value="ounce">ounce</option>
+                        <option value="cup">cup</option>
+                        <option value="pint">pint</option>
+                        <option value="quart">quart</option>
+                        <option value="quart">gallon</option>
+                    </select>
+                </td>
+                <td rowspan="2" class="button">
+                <button id="volumebutton">Convert!</button>
+                </td>
+                <td>
+                    <select id="selectvolume2">
+                        <option value="millilitre">millilitre</option>
+                        <option value="litre">litre</option>
+                        <option value="teaspoon">teaspoon</option>
+                        <option value="tablespoon">tablespoon</option>
+                        <option value="ounce">ounce</option>
+                        <option value="cup">cup</option>
+                        <option value="pint">pint</option>
+                        <option value="quart">quart</option>
+                        <option value="quart">gallon</option>
+                    </select>
+                </td>
+            </tr>
+            <tr height=50px>
+                <td>
+                    <input type="text" id="inputlength">
+                </td>
+                <td>
+                    <input type="text" id="resultlength" disabled>
+                </td>
+                <td>
+                    <input type="text" id="inputmass">
+                </td>
+                <td>
+                    <input type="text" id="resultmass" disabled>
+                </td>
+                <td>
+                    <input type="text" id="inputvolume">
+                </td>
+                <td>
+                    <input type="text" id="resultvolume" disabled>
+                </td>
+            </tr>
+        </table> </br>
+        <table align=center width=66% cellspacing=0 cellpadding=0 border=0>
+            <tr height=100px>
+                <th id="timecolumn" colspan=3>Time</th> 
+                <th id="tempcolumn" colspan=3>Temperature</th>
+            </tr>
+            <tr height=50px>
+                <td>
+                    <select id="selecttime1">
+                        <option value="second">second</option>
+                        <option value="minute">minute</option>
+                        <option value="hour">hour</option>
+                        <option value="day">day</option>
+                        <option value="week">week</option>
+                        <option value="year">year</option>
+                    </select>
+                </td>
+                <td rowspan="2" class="button">
+                <button id="timebutton">Convert!</button>
+                </td>
+                <td>
+                    <select id="selecttime2">
+                        <option value="second">second</option>
+                        <option value="minute">minute</option>
+                        <option value="hour">hour</option>
+                        <option value="day">day</option>
+                        <option value="week">week</option>
+                        <option value="year">year</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="selecttemperature1">
+                        <option value="Celsius">Celsius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                    </select>
+                </td>
+                <td rowspan="2" class="button">
+                <button id="temperaturebutton">Convert!</button>
+                </td>
+                <td>
+                    <select id="selecttemperature2">
+                        <option value="Celsius">Celsius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                    </select>
+                </td>
+            </tr>
+            <tr height=50px>
+                <td>
+                    <input type="text" id="inputtime">                    
+                </td>
+                <td>
+                    <input type="text" id="resulttime" disabled>
+                </td>
+                <td>
+                    <input type="text" id="inputtemperature">
+                </td>
+                <td>
+                    <input type="text" id="resulttemperature" disabled>
+                </td>
+            </tr>
+        </table>
+        <script>
+            //The user input values of the various units are stored under different variables.
+            var length = document.getElementById("inputlength");
+            var mass = document.getElementById("inputmass");
+            var volume = document.getElementById("inputvolume");
+            var time = document.getElementById("inputtime");
+            var temperature = document.getElementById("inputtemperature");
+            
+            //The "Convert!" buttons are stored under different variables.
+            var lengthB = document.getElementById("lengthbutton");
+            var massB = document.getElementById("massbutton");
+            var volumeB = document.getElementById("volumebutton");
+            var timeB = document.getElementById("timebutton");
+            var tempB = document.getElementById("temperaturebutton");
+            
+            //The output values that are shown after a conversion are stored under different variables.
+            var lengthRes = document.getElementById("resultlength");
+            var massRes = document.getElementById("resultmass");
+            var volumeRes = document.getElementById("resultvolume");
+            var timeRes = document.getElementById("resulttime");
+            var tempRes = document.getElementById("resulttemperature");
+            
+            //When a "Convert!" button is clicked, its respective function will be called to determine the result of the conversion.
+            lengthB.addEventListener("click", findLength);
+            massB.addEventListener("click", findMass);
+            volumeB.addEventListener("click", findVolume);
+            timeB.addEventListener("click", findTime);
+            tempB.addEventListener("click", findTemperature);
+            
+            
+            //This function converts a unit of length to another unit of length.
+            function findLength(){
+                /*The function isNaN checks to see if the input value is a valid number.
+                *If it isn't, an alert will be sent stating the number is not valid.
+                */
+                var lengthFloat = parseFloat(length.value);
+                if(isNaN(lengthFloat)){
+                    alert("Length input is not a valid number.");
+                //These conditions check to see which units of length chosen from the two drop-down lists are selected.
+                }else if(selectlength1.value==selectlength2.value){
+                    lengthRes.value = length.value;
+                }else if(selectlength1.value=="millimetre" && selectlength2.value=="centimetre"){
+                //If a condition is met, an arithmetic operation will be run to determine the proper conversion.
+                    lengthRes.value = length.value/10;
+                }else if(selectlength1.value=="millimetre" && selectlength2.value=="metre"){
+                    lengthRes.value = length.value/1000;
+                }else if(selectlength1.value=="millimetre" && selectlength2.value=="kilometre"){
+                    lengthRes.value = length.value/1000000;
+                }else if(selectlength1.value=="millimetre" && selectlength2.value=="inch"){
+                    lengthRes.value = length.value*0.0393701;
+                }else if(selectlength1.value=="millimetre" && selectlength2.value=="foot"){
+                    lengthRes.value = length.value*0.00328084;
+                }else if(selectlength1.value=="millimetre" && selectlength2.value=="yard"){
+                    lengthRes.value = length.value*0.00109361;
+                }else if(selectlength1.value=="millimetre"){
+                    lengthRes.value = length.value*0.000000621371;
+                }else if(selectlength1.value=="centimetre" && selectlength2.value=="millimetre"){
+                    lengthRes.value = length.value*10;
+                }else if(selectlength1.value=="centimetre" && selectlength2.value=="metre"){
+                    lengthRes.value = length.value/100;
+                }else if(selectlength1.value=="centimetre" && selectlength2.value=="kilometre"){
+                    lengthRes.value = length.value/100000;
+                }else if(selectlength1.value=="centimetre" && selectlength2.value=="inch"){
+                    lengthRes.value = length.value*0.393701;
+                }else if(selectlength1.value=="centimetre" && selectlength2.value=="foot"){
+                    lengthRes.value = length.value*0.0328084;
+                }else if(selectlength1.value=="centimetre" && selectlength2.value=="yard"){
+                    lengthRes.value = length.value*0.0109361;
+                }else if(selectlength1.value=="centimetre"){
+                    lengthRes.value = length.value*0.00000621371;
+                }else if(selectlength1.value=="metre" && selectlength2.value=="millimetre"){
+                    lengthRes.value = length.value*1000;
+                }else if(selectlength1.value=="metre" && selectlength2.value=="centimetre"){
+                    lengthRes.value = length.value*100;
+                }else if(selectlength1.value=="metre" && selectlength2.value=="kilometre"){
+                    lengthRes.value = length.value/1000;
+                }else if(selectlength1.value=="metre" && selectlength2.value=="inch"){
+                    lengthRes.value = length.value*39.3701;
+                }else if(selectlength1.value=="metre" && selectlength2.value=="foot"){
+                    lengthRes.value = length.value*3.28084;
+                }else if(selectlength1.value=="metre" && selectlength2.value=="yard"){
+                    lengthRes.value = length.value*1.09361;
+                }else if(selectlength1.value=="metre"){
+                    lengthRes.value = length.value*0.000621371;
+                }else if(selectlength1.value=="kilometre" && selectlength2.value=="millimetre"){
+                    lengthRes.value = length.value*1000000;
+                }else if(selectlength1.value=="kilometre" && selectlength2.value=="centimetre"){
+                    lengthRes.value = length.value*100000;
+                }else if(selectlength1.value=="kilometre" && selectlength2.value=="metre"){
+                    lengthRes.value = length.value*1000;
+                }else if(selectlength1.value=="kilometre" && selectlength2.value=="inch"){
+                    lengthRes.value = length.value*39370.1;
+                }else if(selectlength1.value=="kilometre" && selectlength2.value=="foot"){
+                    lengthRes.value = length.value*3280.84;
+                }else if(selectlength1.value=="kilometre" && selectlength2.value=="yard"){
+                    lengthRes.value = length.value*1093.61;
+                }else if(selectlength1.value=="kilometre"){
+                    lengthRes.value = length.value*0.621371;
+                }else if(selectlength1.value=="inch" && selectlength2.value=="millimetre"){
+                    lengthRes.value = length.value*25.4;
+                }else if(selectlength1.value=="inch" && selectlength2.value=="centimetre"){
+                    lengthRes.value = length.value*2.54;
+                }else if(selectlength1.value=="inch" && selectlength2.value=="metre"){
+                    lengthRes.value = length.value*0.0254;
+                }else if(selectlength1.value=="inch" && selectlength2.value=="kilometre"){
+                    lengthRes.value = length.value*0.0000254;
+                }else if(selectlength1.value=="inch" && selectlength2.value=="foot"){
+                    lengthRes.value = length.value/12;
+                }else if(selectlength1.value=="inch" && selectlength2.value=="yard"){
+                    lengthRes.value = length.value/36;
+                }else if(selectlength1.value=="inch"){
+                    lengthRes.value = length.value/63360;
+                }else if(selectlength1.value=="foot" && selectlength2.value=="millimetre"){
+                    lengthRes.value = length.value*304.8;
+                }else if(selectlength1.value=="foot" && selectlength2.value=="centimetre"){
+                    lengthRes.value = length.value*30.48;
+                }else if(selectlength1.value=="foot" && selectlength2.value=="metre"){
+                    lengthRes.value = length.value*0.3048;
+                }else if(selectlength1.value=="foot" && selectlength2.value=="kilometre"){
+                    lengthRes.value = length.value*0.0003048;
+                }else if(selectlength1.value=="foot" && selectlength2.value=="inch"){
+                    lengthRes.value = length.value*12;
+                }else if(selectlength1.value=="foot" && selectlength2.value=="yard"){
+                    lengthRes.value = length.value/3;
+                }else if(selectlength1.value=="foot"){
+                    lengthRes.value = length.value/5280;
+                }else if(selectlength1.value=="yard" && selectlength2.value=="millimetre"){
+                    lengthRes.value = length.value*914.4;
+                }else if(selectlength1.value=="yard" && selectlength2.value=="centimetre"){
+                    lengthRes.value = length.value*91.44;
+                }else if(selectlength1.value=="yard" && selectlength2.value=="metre"){
+                    lengthRes.value = length.value*0.9144;
+                }else if(selectlength1.value=="yard" && selectlength2.value=="kilometre"){
+                    lengthRes.value = length.value*0.0009144;
+                }else if(selectlength1.value=="yard" && selectlength2.value=="inch"){
+                    lengthRes.value = length.value*36;
+                }else if(selectlength1.value=="yard" && selectlength2.value=="foot"){
+                    lengthRes.value = length.value*3;
+                }else if(selectlength1.value=="yard"){
+                    lengthRes.value = length.value/1760;
+                }else if(selectlength2.value=="millimetre"){
+                    lengthRes.value = length.value*1609340;
+                }else if(selectlength2.value=="centimetre"){
+                    lengthRes.value = length.value*160934;
+                }else if(selectlength2.value=="metre"){
+                    lengthRes.value = length.value*1609.34;
+                }else if(selectlength2.value=="kilometre"){
+                    lengthRes.value = length.value*1.60934;
+                }else if(selectlength2.value=="inch"){
+                    lengthRes.value = length.value*63360;
+                }else if(selectlength2.value=="foot"){
+                    lengthRes.value = length.value*5280;
+                }else{
+                    lengthRes.value = length.value*1760;
+                }
+            }
+            
+            //This function calculates conversions within units of mass.
+            function findMass(){
+                var massFloat = parseFloat(mass.value);
+                if(isNaN(massFloat)){
+                    alert("Mass input is not a valid number.");
+                }else if(selectmass1.value==selectmass2.value){
+                    massRes.value = mass.value;
+                }else if(selectmass1.value=="milligram" && selectmass2.value=="gram"){
+                    massRes.value = mass.value/1000;
+                }else if(selectmass1.value=="milligram" && selectmass2.value=="kilogram"){
+                    massRes.value = mass.value/1000000;
+                }else if(selectmass1.value=="milligram" && selectmass2.value=="tonne"){
+                    massRes.value = mass.value/1000000000;
+                }else if(selectmass1.value=="milligram" && selectmass2.value=="ounce"){
+                    massRes.value = mass.value*0.000035274;
+                }else if(selectmass1.value=="milligram" && selectmass2.value=="pound"){
+                    massRes.value = mass.value*0.00000220462;
+                }else if(selectmass1.value=="milligram"){
+                    massRes.value = mass.value*0.00000000110231;
+                }else if(selectmass1.value=="gram" && selectmass2.value=="milligram"){
+                    massRes.value = mass.value*1000;
+                }else if(selectmass1.value=="gram" && selectmass2.value=="kilogram"){
+                    massRes.value = mass.value/1000;
+                }else if(selectmass1.value=="gram" && selectmass2.value=="tonne"){
+                    massRes.value = mass.value/1000000;
+                }else if(selectmass1.value=="gram" && selectmass2.value=="ounce"){
+                    massRes.value = mass.value*0.035274;
+                }else if(selectmass1.value=="gram" && selectmass2.value=="pound"){
+                    massRes.value = mass.value*0.00220462;
+                }else if(selectmass1.value=="gram"){
+                    massRes.value = mass.value*0.00000110231;
+                }else if(selectmass1.value=="kilogram" && selectmass2.value=="milligram"){
+                    massRes.value = mass.value*1000000;
+                }else if(selectmass1.value=="kilogram" && selectmass2.value=="gram"){
+                    massRes.value = mass.value*1000;
+                }else if(selectmass1.value=="kilogram" && selectmass2.value=="tonne"){
+                    massRes.value = mass.value/1000;
+                }else if(selectmass1.value=="kilogram" && selectmass2.value=="ounce"){
+                    massRes.value = mass.value*35.274;
+                }else if(selectmass1.value=="kilogram" && selectmass2.value=="pound"){
+                    massRes.value = mass.value*2.20462;
+                }else if(selectmass1.value=="kilogram"){
+                    massRes.value = mass.value*0.00110231;
+                }else if(selectmass1.value=="tonne" && selectmass2.value=="milligram"){
+                    massRes.value = mass.value*1000000000;
+                }else if(selectmass1.value=="tonne" && selectmass2.value=="gram"){
+                    massRes.value = mass.value*1000000;
+                }else if(selectmass1.value=="tonne" && selectmass2.value=="kilogram"){
+                    massRes.value = mass.value*1000;
+                }else if(selectmass1.value=="tonne" && selectmass2.value=="ounce"){
+                    massRes.value = mass.value*35274;
+                }else if(selectmass1.value=="tonne" && selectmass2.value=="pound"){
+                    massRes.value = mass.value*2204.62;
+                }else if(selectmass1.value=="tonne"){
+                    massRes.value = mass.value*1.10231;
+                }else if(selectmass1.value=="ounce" && selectmass2.value=="milligram"){
+                    massRes.value = mass.value*28349.5;
+                }else if(selectmass1.value=="ounce" && selectmass2.value=="gram"){
+                    massRes.value = mass.value*28.3495;
+                }else if(selectmass1.value=="ounce" && selectmass2.value=="kilogram"){
+                    massRes.value = mass.value*0.0283495;
+                }else if(selectmass1.value=="ounce" && selectmass2.value=="tonne"){
+                    massRes.value = mass.value*0.00002835;
+                }else if(selectmass1.value=="ounce" && selectmass2.value=="pound"){
+                    massRes.value = mass.value/16;
+                }else if(selectmass1.value=="ounce"){
+                    massRes.value = mass.value/32000;
+                }else if(selectmass1.value=="pound" && selectmass2.value=="milligram"){
+                    massRes.value = mass.value*453592;
+                }else if(selectmass1.value=="pound" && selectmass2.value=="gram"){
+                    massRes.value = mass.value*453.592;
+                }else if(selectmass1.value=="pound" && selectmass2.value=="kilogram"){
+                    massRes.value = mass.value*0.453592;
+                }else if(selectmass1.value=="pound" && selectmass2.value=="tonne"){
+                    massRes.value = mass.value*0.000453592;
+                }else if(selectmass1.value=="pound" && selectmass2.value=="ounce"){
+                    massRes.value = mass.value*16;
+                }else if(selectmass1.value=="pound"){
+                    massRes.value = mass.value/2000;
+                }else if(selectmass2.value=="milligram"){
+                    massRes.value = mass.value*907184740;
+                }else if(selectmass2.value=="gram"){
+                    massRes.value = mass.value*907185;
+                }else if(selectmass2.value=="kilogram"){
+                    massRes.value = mass.value*907.185;
+                }else if(selectmass2.value=="tonne"){
+                    massRes.value = mass.value*0.907185;
+                }else if(selectmass2.value=="ounce"){
+                    massRes.value = mass.value*32000;
+                }else{
+                    massRes.value = mass.value*2000;
+                }
+            }
+            
+            //This function calculates conversions within units of volume.
+            function findVolume(){
+                var volumeFloat = parseFloat(volume.value);
+                if(isNaN(volumeFloat)){
+                    alert("Volume input is not a valid number.");
+                }else if(selectvolume1.value==selectvolume2.value){
+                    volumeRes.value = volume.value;
+                }else if(selectvolume1.value=="millilitre" && selectvolume2.value=="litre"){
+                    volumeRes.value = volume.value/1000;
+                }else if(selectvolume1.value=="millilitre" && selectvolume2.value=="teaspoon"){
+                    volumeRes.value = volume.value*0.202884;
+                }else if(selectvolume1.value=="millilitre" && selectvolume2.value=="tablespoon"){
+                    volumeRes.value = volume.value*0.067628;
+                }else if(selectvolume1.value=="millilitre" && selectvolume2.value=="ounce"){
+                    volumeRes.value = volume.value*0.033814;
+                }else if(selectvolume1.value=="millilitre" && selectvolume2.value=="cup"){
+                    volumeRes.value = volume.value*0.00422675;
+                }else if(selectvolume1.value=="millilitre" && selectvolume2.value=="pint"){
+                    volumeRes.value = volume.value*0.00211338;
+                }else if(selectvolume1.value=="millilitre" && selectvolume2.value=="quart"){
+                    volumeRes.value = volume.value*0.00105669;
+                }else if(selectvolume1.value=="millilitre"){
+                    volumeRes.value = volume.value*0.000264172;
+                }else if(selectvolume1.value=="litre" && selectvolume2.value=="millilitre"){
+                    volumeRes.value = volume.value*1000;
+                }else if(selectvolume1.value=="litre" && selectvolume2.value=="teaspoon"){
+                    volumeRes.value = volume.value*202.884;
+                }else if(selectvolume1.value=="litre" && selectvolume2.value=="tablespoon"){
+                    volumeRes.value = volume.value*67.628;
+                }else if(selectvolume1.value=="litre" && selectvolume2.value=="ounce"){
+                    volumeRes.value = volume.value*33.814;
+                }else if(selectvolume1.value=="litre" && selectvolume2.value=="cup"){
+                    volumeRes.value = volume.value*4.22675;
+                }else if(selectvolume1.value=="litre" && selectvolume2.value=="pint"){
+                    volumeRes.value = volume.value*2.11338;
+                }else if(selectvolume1.value=="litre" && selectvolume2.value=="quart"){
+                    volumeRes.value = volume.value*1.05669;
+                }else if(selectvolume1.value=="litre"){
+                    volumeRes.value = volume.value*0.264172;
+                }else if(selectvolume1.value=="teaspoon" && selectvolume2.value=="millilitre"){
+                    volumeRes.value = volume.value*4.92892;
+                }else if(selectvolume1.value=="teaspoon" && selectvolume2.value=="litre"){
+                    volumeRes.value = volume.value*0.00492892;
+                }else if(selectvolume1.value=="teaspoon" && selectvolume2.value=="tablespoon"){
+                    volumeRes.value = volume.value/3;
+                }else if(selectvolume1.value=="teaspoon" && selectvolume2.value=="ounce"){
+                    volumeRes.value = volume.value/6;
+                }else if(selectvolume1.value=="teaspoon" && selectvolume2.value=="cup"){
+                    volumeRes.value = volume.value/48;
+                }else if(selectvolume1.value=="teaspoon" && selectvolume2.value=="pint"){
+                    volumeRes.value = volume.value/96;
+                }else if(selectvolume1.value=="teaspoon" && selectvolume2.value=="quart"){
+                    volumeRes.value = volume.value/192;
+                }else if(selectvolume1.value=="teaspoon"){
+                    volumeRes.value = volume.value/768;
+                }else if(selectvolume1.value=="tablespoon" && selectvolume2.value=="millilitre"){
+                    volumeRes.value = volume.value*14.7868;
+                }else if(selectvolume1.value=="tablespoon" && selectvolume2.value=="litre"){
+                    volumeRes.value = volume.value*0.0147868;
+                }else if(selectvolume1.value=="tablespoon" && selectvolume2.value=="teaspoon"){
+                    volumeRes.value = volume.value*3;
+                }else if(selectvolume1.value=="tablespoon" && selectvolume2.value=="ounce"){
+                    volumeRes.value = volume.value/2;
+                }else if(selectvolume1.value=="tablespoon" && selectvolume2.value=="cup"){
+                    volumeRes.value = volume.value/16;
+                }else if(selectvolume1.value=="tablespoon" && selectvolume2.value=="pint"){
+                    volumeRes.value = volume.value/32;
+                }else if(selectvolume1.value=="tablespoon" && selectvolume2.value=="quart"){
+                    volumeRes.value = volume.value/64;
+                }else if(selectvolume1.value=="tablespoon"){
+                    volumeRes.value = volume.value/256;
+                }else if(selectvolume1.value=="ounce" && selectvolume2.value=="millilitre"){
+                    volumeRes.value = volume.value*29.5735;
+                }else if(selectvolume1.value=="ounce" && selectvolume2.value=="litre"){
+                    volumeRes.value = volume.value*0.0295735;
+                }else if(selectvolume1.value=="ounce" && selectvolume2.value=="teaspoon"){
+                    volumeRes.value = volume.value*6;
+                }else if(selectvolume1.value=="ounce" && selectvolume2.value=="tablespoon"){
+                    volumeRes.value = volume.value*2;
+                }else if(selectvolume1.value=="ounce" && selectvolume2.value=="cup"){
+                    volumeRes.value = volume.value/8;
+                }else if(selectvolume1.value=="ounce" && selectvolume2.value=="pint"){
+                    volumeRes.value = volume.value/16;
+                }else if(selectvolume1.value=="ounce" && selectvolume2.value=="quart"){
+                    volumeRes.value = volume.value/32;
+                }else if(selectvolume1.value=="ounce"){
+                    volumeRes.value = volume.value/128;
+                }else if(selectvolume1.value=="cup" && selectvolume2.value=="millilitre"){
+                    volumeRes.value = volume.value*236.588;
+                }else if(selectvolume1.value=="cup" && selectvolume2.value=="litre"){
+                    volumeRes.value = volume.value*0.236588;
+                }else if(selectvolume1.value=="cup" && selectvolume2.value=="teaspoon"){
+                    volumeRes.value = volume.value*48;
+                }else if(selectvolume1.value=="cup" && selectvolume2.value=="tablespoon"){
+                    volumeRes.value = volume.value*16;
+                }else if(selectvolume1.value=="cup" && selectvolume2.value=="ounce"){
+                    volumeRes.value = volume.value*8;
+                }else if(selectvolume1.value=="cup" && selectvolume2.value=="pint"){
+                    volumeRes.value = volume.value/2;
+                }else if(selectvolume1.value=="cup" && selectvolume2.value=="quart"){
+                    volumeRes.value = volume.value/4;
+                }else if(selectvolume1.value=="cup"){
+                    volumeRes.value = volume.value/16;
+                }else if(selectvolume1.value=="pint" && selectvolume2.value=="millilitre"){
+                    volumeRes.value = volume.value*473.176;
+                }else if(selectvolume1.value=="pint" && selectvolume2.value=="litre"){
+                    volumeRes.value = volume.value*0.473176;
+                }else if(selectvolume1.value=="pint" && selectvolume2.value=="teaspoon"){
+                    volumeRes.value = volume.value*96;
+                }else if(selectvolume1.value=="pint" && selectvolume2.value=="tablespoon"){
+                    volumeRes.value = volume.value*32;
+                }else if(selectvolume1.value=="pint" && selectvolume2.value=="ounce"){
+                    volumeRes.value = volume.value*16;
+                }else if(selectvolume1.value=="pint" && selectvolume2.value=="cup"){
+                    volumeRes.value = volume.value*2;
+                }else if(selectvolume1.value=="pint" && selectvolume2.value=="quart"){
+                    volumeRes.value = volume.value/2;
+                }else if(selectvolume1.value=="pint"){
+                    volumeRes.value = volume.value/8;
+                }else if(selectvolume1.value=="quart" && selectvolume2.value=="millilitre"){
+                    volumeRes.value = volume.value*946.353;
+                }else if(selectvolume1.value=="quart" && selectvolume2.value=="litre"){
+                    volumeRes.value = volume.value*0.946353;
+                }else if(selectvolume1.value=="quart" && selectvolume2.value=="teaspoon"){
+                    volumeRes.value = volume.value*192;
+                }else if(selectvolume1.value=="quart" && selectvolume2.value=="tablespoon"){
+                    volumeRes.value = volume.value*64;
+                }else if(selectvolume1.value=="quart" && selectvolume2.value=="ounce"){
+                    volumeRes.value = volume.value*32;
+                }else if(selectvolume1.value=="quart" && selectvolume2.value=="cup"){
+                    volumeRes.value = volume.value*4;
+                }else if(selectvolume1.value=="quart" && selectvolume2.value=="pint"){
+                    volumeRes.value = volume.value*2;
+                }else if(selectvolume1.value=="quart"){
+                    volumeRes.value = volume.value/4;
+                }else if(selectvolume2.value=="millilitre"){
+                    volumeRes.value = volume.value*3785.41;
+                }else if(selectvolume2.value=="litre"){
+                    volumeRes.value = volume.value*3.78541;
+                }else if(selectvolume2.value=="teaspoon"){
+                    volumeRes.value = volume.value*768;
+                }else if(selectvolume2.value=="tablespoon"){
+                    volumeRes.value = volume.value*256;
+                }else if(selectvolume2.value=="ounce"){
+                    volumeRes.value = volume.value*128;
+                }else if(selectvolume2.value=="cup"){
+                    volumeRes.value = volume.value*16;
+                }else if(selectvolume2.value=="pint"){
+                    volumeRes.value = volume.value*8;
+                }else{
+                    volumeRes.value = volume.value*4;
+                }
+            }
+            
+            //This function calculates conversions within units of time.
+            function findTime(){
+                var timeFloat = parseFloat(time.value);
+                if(isNaN(timeFloat)){
+                    alert("Time input is not a valid number.");
+                }else if(selecttime1.value==selecttime2.value){
+                    timeRes.value = time.value;
+                }else if(selecttime1.value=="second" && selecttime2.value=="minute"){
+                    timeRes.value = time.value/60;
+                }else if(selecttime1.value=="second" && selecttime2.value=="hour"){
+                    timeRes.value = time.value/3600;
+                }else if(selecttime1.value=="second" && selecttime2.value=="day"){
+                    timeRes.value = time.value/86400;
+                }else if(selecttime1.value=="second" && selecttime2.value=="week"){
+                    timeRes.value = time.value/604800;
+                }else if(selecttime1.value=="second"){
+                    timeRes.value = time.value/31536000;
+                }else if(selecttime1.value=="minute" && selecttime2.value=="second"){
+                    timeRes.value = time.value*60;
+                }else if(selecttime1.value=="minute" && selecttime2.value=="hour"){
+                    timeRes.value = time.value/60;
+                }else if(selecttime1.value=="minute" && selecttime2.value=="day"){
+                    timeRes.value = time.value/1440;
+                }else if(selecttime1.value=="minute" && selecttime2.value=="week"){
+                    timeRes.value = time.value/10080;
+                }else if(selecttime1.value=="minute"){
+                    timeRes.value = time.value/525600;
+                }else if(selecttime1.value=="hour" && selecttime2.value=="second"){
+                    timeRes.value = time.value*3600;
+                }else if(selecttime1.value=="hour" && selecttime2.value=="minute"){
+                    timeRes.value = time.value*60;
+                }else if(selecttime1.value=="hour" && selecttime2.value=="day"){
+                    timeRes.value = time.value/24;
+                }else if(selecttime1.value=="hour" && selecttime2.value=="week"){
+                    timeRes.value = time.value/168;
+                }else if(selecttime1.value=="hour"){
+                    timeRes.value = time.value/8760;
+                }else if(selecttime1.value=="day" && selecttime2.value=="second"){
+                    timeRes.value = time.value*86400;
+                }else if(selecttime1.value=="day" && selecttime2.value=="minute"){
+                    timeRes.value = time.value*1440;
+                }else if(selecttime1.value=="day" && selecttime2.value=="hour"){
+                    timeRes.value = time.value*24;
+                }else if(selecttime1.value=="day" && selecttime2.value=="week"){
+                    timeRes.value = time.value/7;
+                }else if(selecttime1.value=="day"){
+                    timeRes.value = time.value/365;
+                }else if(selecttime1.value=="week" && selecttime2.value=="second"){
+                    timeRes.value = time.value*604800;
+                }else if(selecttime1.value=="week" && selecttime2.value=="minute"){
+                    timeRes.value = time.value*10080;
+                }else if(selecttime1.value=="week" && selecttime2.value=="hour"){
+                    timeRes.value = time.value*168;
+                }else if(selecttime1.value=="week" && selecttime2.value=="day"){
+                    timeRes.value = time.value*7;
+                }else if(selecttime1.value=="week"){
+                    timeRes.value = time.value/52;
+                }else if(selecttime2.value=="second"){
+                    timeRes.value = time.value*31536000;
+                }else if(selecttime2.value=="minute"){
+                    timeRes.value = time.value*525600;
+                }else if(selecttime2.value=="hour"){
+                    timeRes.value = time.value*8760;
+                }else if(selecttime2.value=="day"){
+                    timeRes.value = time.value*365;
+                }else{
+                    timeRes.value = time.value*52;
+                }
+            }
+            
+            //This function calculates conversions within two units of temperature: Celsius and Fahrenheit.
+            function findTemperature(){
+               var tempFloat = parseFloat(temperature.value)
+               if(isNaN(tempFloat)){
+                   alert("Temperature input is not a valid number.");
+               }else if(selecttemperature1.value==selecttemperature2.value){
+                   tempRes.value = temperature.value;
+               }else if(selecttemperature1.value=="Celsius"){
+                   tempRes.value = temperature.value*1.8-(-32);
+               }else{
+                   tempRes.value = (temperature.value-32)/1.8;
+               }
+           }
+        </script>
+    </body>
+</html>

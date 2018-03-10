@@ -1,0 +1,53 @@
+td {
+    text-align: center;
+    width: 11%;
+}
+
+th {
+    width: 33%;
+    font-variant: small-caps;
+    color: white;
+    font-size: 25px;
+    font-family:"Bookman", serif;
+}
+
+.header {
+    width: 33%;
+}
+
+input {
+    width: 100px;
+}
+
+select {
+    width: 100px;
+}
+
+body {
+    background-image: url(http://www.planwallpaper.com/static/images/518169-backgrounds.jpg);
+}
+
+#title {
+    font-family: "Georgia", serif;
+    font-size: 100px;
+}
+
+#tempcolumn {
+    background-image: url(http://ak2.picdn.net/shutterstock/videos/1328332/thumb/1.jpg);
+}
+
+#lengthcolumn {
+    background-image: url(http://i.ytimg.com/vi/6y-OAsRZbas/maxresdefault.jpg);
+}
+
+#timecolumn {
+    background-image: url(http://cdn-7.nikon-cdn.com/Images/Learn-Explore/Photography-Techniques/2017/Deb-Sandidge-sunrises-sunsets/Media/Deb-Sandidge-13_Sunset-Melbourne-Beach.jpg);
+}
+
+#volumecolumn {
+    background-image: url(http://c1.staticflickr.com/3/2939/32250580584_23e4cb54d8_b.jpg);
+}
+
+#masscolumn {
+    background-image: url(http://i0.wp.com/www.theglitteringunknown.com/wp-content/uploads/2017/01/Sunset-from-top-of-Arc-close-up-The-Glittering-Unknown.jpg);
+}
